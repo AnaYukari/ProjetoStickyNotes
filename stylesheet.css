@@ -1,21 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-   min-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #F5F5F5;
 }
-.HeaderBox{
+
+.HeaderBox {
     flex: .1;
     display: flex;
 }
-.ViewBox{
+
+.ViewBox {
     flex: 3;
     background-color: #FFFAFA;
     display: flex;
@@ -25,28 +31,91 @@ body {
     border-radius: 40px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
 }
-.LeftSide{
+
+.LeftSide {
     flex: 1.2;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.MenuBar{
+
+.MenuBar {
     display: flex;
     flex: .85;
-    height: 95%;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: #f5f0ed;
+    height: 95%;
+     padding: 7%;
+    background-color: #F9F5F5;
     border-radius: 40px;
 
 }
-.RightSide{
+
+.MenuHeader {
+    display: flex;
+    flex: .7;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuIcon {
+    display: flex;
+    flex: .12;
+}
+
+.menuTitle {
+    display:flex ;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    font-style: normal;
+    color: #363535;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.MenuSearch {
+    display: flex;
+    flex: 1.2;
+    align-items: center;
+}
+.searchInput{
+    padding: 7%;
+    border-radius: 40px;
+    border: none;
+    width: 100%;
+    height: 45%;
+    background-color: #F2EFEF;
+    color: #363535;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+}
+.searchInput:focus{
+    outline: none;
+    border: none
+}
+
+.MenuTasks {
+    display: flex;
+    flex: 3;
+    background-color: #f0f024;
+}
+
+.MenuFilter {
+    display: flex;
+    flex: 4;
+    background-color: rgb(66, 50, 206);
+}
+
+.RightSide {
     flex: 4;
     background-color: #2bb832;
     display: flex;
 }
-.FooterBox{
+
+.FooterBox {
     flex: .1;
-    display: flex; 
+    display: flex;
 }
