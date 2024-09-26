@@ -22,107 +22,141 @@ body {
 }
 
 .ViewBox {
-    flex: 3;
-    background-color: #FFFAFA;
     display: flex;
-    width: 95%;
+    flex: 3;
     justify-content: center;
     flex-direction: row;
+    width: 95%;
     border-radius: 40px;
+    background-color: #FFFAFA;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.247);
 }
 
 .LeftSide {
-    flex: 1.2;
     display: flex;
-    align-items: center;
+    flex: 1;
     justify-content: center;
+    align-items: center;
 }
 
 .MenuBar {
     display: flex;
-    flex: .85;
     flex-direction: column;
-    justify-content: center;
-    height: 95%;
-     padding: 7%;
     background-color: #F9F5F5;
-    border-radius: 40px;
-
+    width: 90%;
+    height: 94%;
+    border-radius: 30px;
 }
 
-.MenuHeader {
+.menuHeader {
     display: flex;
-    flex: .7;
+    flex: 1.2;
     justify-content: space-between;
     align-items: center;
 }
 
-.menuIcon {
-    display: flex;
-    flex: .12;
-}
-
 .menuTitles {
-    display:flex ;
-    flex: .5;
-    font-family: "Alata", sans-serif;
+    display: flex;
+    font-family: "Alata", system-ui;
     font-weight: 400;
-    font-size: 34px;
     font-style: normal;
-    color: #363535;
-    text-align: center;
-    margin-left: 2%;
+    font-size: 36px;
+    margin-left: 10%;
+    color : #363535;
 }
 
-.MenuSearch {
+#menuIcon {
     display: flex;
-    flex: 1.3;
-    align-items: center;
+    height: 20%;
+    margin-right: 10%;
+}
+
+.menuSearch {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+
 }
 .searchInput{
-    padding: 7%;
+    padding: 10px;
     border-radius: 40px;
     border: none;
-    width: 100%;
-    height: 45%;
+    width: 90%;
+    height: 65%;
+    padding-left: 5%;
     background-color: #F2EFEF;
-    color: #363535;
-    font-family: "Alata", sans-serif;
+    font-family: "Alata", system-ui;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
-}
-.searchInput:focus{
-    outline: none;
-    border: none
+    color: #363535;
 }
 
-.MenuTasks {
+.menuTasks {
     display: flex;
     flex-direction: column;
     flex: 2;
-    padding-bottom: 5%;
-}
-.containerTasks{
-    display: flex;
-    flex: 1.5;
-    flex-direction: column;
     justify-content: center;
-    background-color: #F2EFEF;
-    border-radius: 40px;
 }
 
-.MenuFilter {
+.tasksBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EFEF;
+    width: 90%;
+    height: 90%;
+    border-radius: 30px;
+    align-self: center;
+    margin-top: 5%;
+}
+
+.menuFilters {
     display: flex;
     flex: 4;
-    background-color: rgb(66, 50, 206);
+    flex-direction: column;
+    justify-content: center;
+}
+.filtersBox{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EFEF;
+    width: 90%;
+    height: 70%;
+    border-radius: 30px;
+    align-self: center;
+    margin-top: 5%;
 }
 
 .RightSide {
-    flex: 4;
-    background-color: #2bb832;
     display: flex;
+    flex: 3;
+    flex-direction: column;
+}
+
+.WorkspaceHeader{
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkgreen;
+}
+
+.WorkspaceTitle{
+    display: flex;
+    font-family: "Alata", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 74px;
+    margin-left: 10%;
+    color: #363535;
+}
+
+.WorkspaceBody{
+    display: flex;
+    flex: 5;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12bd2f;
 }
 
 .FooterBox {

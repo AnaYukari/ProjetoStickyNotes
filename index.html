@@ -14,22 +14,31 @@
     <section class="ViewBox">
         <div class="LeftSide">
             <div class="MenuBar">
-                <div class="MenuHeader">
-                    <p class="menuTitles">Menu</p>
-                    <img src="./imgs/menuIcon.png" alt="Menu icon" class="menuIcon">
+                <div class="menuHeader" >
+                    <h3 class="menuTitles"> Menu </h3>
+                    <img id="menuIcon" src="./imgs/menuIcon.png" alt="Ícone do menu" />
                 </div>
-                <div class="MenuSearch">
-                    <input type="text" placeholder="Search..." class="searchInput">
+                <div class="menuSearch" >
+                    <input type="text" placeholder="Search.." class="searchInput" />
                 </div>
-                <div class="MenuTasks">
-                    <p class="menuTitles">Tasks</p>
-                    <div class="containerTasks">
+                <div class="menuTasks" >
+                    <h3 class="menuTitles"> Tasks </h3>
+                    <div class="tasksBox">
                     </div>
                 </div>
-                <div class="MenuFilter"></div>
+                <div class="menuFilters" >
+                    <h3 class="menuTitles"> Filter by:</h3>
+                    <div class="filtersBox">
+                    </div>
+            </div>
             </div>
         </div>
         <div class="RightSide">
+            <div class="WorkspaceHeader">
+                <h1 class="WorkspaceTitle"> Sticky Wall </h1>
+                <button class="AddTask"></button>
+            </div>
+            <div class="WorkspaceBody"></div>
         </div>
     </section>
     <footer class="FooterBox">
