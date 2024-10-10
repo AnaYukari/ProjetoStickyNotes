@@ -6,6 +6,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #E0E0E0;
+    border-radius: 10px;
+  }
 
 body {
     min-height: 100vh;
@@ -23,7 +32,7 @@ body {
 
 .ViewBox {
     display: flex;
-    flex: 3;
+    max-height: 95vh;
     justify-content: center;
     flex-direction: row;
     width: 95%;
@@ -50,7 +59,7 @@ body {
 
 .menuHeader {
     display: flex;
-    flex: 1.2;
+    flex: 1;
     justify-content: space-between;
     align-items: center;
 }
@@ -62,7 +71,7 @@ body {
     font-style: normal;
     font-size: 36px;
     margin-left: 10%;
-    color : #363535;
+    color: #363535;
 }
 
 #menuIcon {
@@ -73,16 +82,17 @@ body {
 
 .menuSearch {
     display: flex;
-    flex: 1;
+    flex: 1.1;
     justify-content: center;
 
 }
-.searchInput{
+
+.searchInput {
     padding: 10px;
     border-radius: 40px;
     border: none;
     width: 90%;
-    height: 65%;
+    height: 50%;
     padding-left: 5%;
     background-color: #F2EFEF;
     font-family: "Alata", system-ui;
@@ -99,7 +109,7 @@ body {
     justify-content: center;
 }
 
-.tasksBox{
+.tasksBox {
     display: flex;
     flex-direction: column;
     background-color: #F2EFEF;
@@ -116,7 +126,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }
-.filtersBox{
+
+.filtersBox {
     display: flex;
     flex-direction: column;
     background-color: #F2EFEF;
@@ -133,30 +144,65 @@ body {
     flex-direction: column;
 }
 
-.WorkspaceHeader{
+.WorkspaceHeader {
     display: flex;
-    flex: 1;
-    justify-content: space-around;
+    flex: 1.2;
+    justify-content: flex-start;
     align-items: center;
-    background-color: darkgreen;
 }
 
-.WorkspaceTitle{
+.WorkspaceTitle {
     display: flex;
     font-family: "Alata", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 74px;
-    margin-left: 10%;
+    margin-left: 1%;
     color: #363535;
 }
 
-.WorkspaceBody{
+.AddTask {
+    color: #363535;
+    width: 15%;
+    height: 30%;
+    border: none;
+    background-color: #F2EFEF;
+    border-radius: 15px;
+    font-family: "Alata", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.AddTask:hover {
+    background-color: #E0E0E0;
+}
+
+.WorkspaceBody {
     display: flex;
-    flex: 5;
+    flex: 6;
     justify-content: space-between;
-    align-items: center;
-    background-color: #12bd2f;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
+    padding-left: 2%;
+}
+
+.note {
+    background-color: lemonchiffon;
+    height: 35vh;
+    width: 35vh;
+    margin-top: 2%;
+    margin-right: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.151);
+    font-family: "Alata", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1%;
+    font-size: 32px;
+
 }
 
 .FooterBox {
